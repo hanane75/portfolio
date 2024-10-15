@@ -1,38 +1,450 @@
-.App {
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+ 
+  padding-left: 50px;
+  padding-right: 50px;
+  background: linear-gradient(to right, #f9e4d4, #a395ea);
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+   /* background-color: white;*/
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 80px; 
+    height: auto;
+  }
+  
+  .logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 5px;
+    color: #333;
+  }
+  
+  .nav {
+    margin-left: auto; /* Permet de pousser la navigation vers la droite */
+  }
+  
+  .nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  .nav ul li a {
+    text-decoration: none;
+    color: #666;
+    font-size: 1rem;
+    FONT-WEIGHT: 600;
+  }
+  
+  .nav ul li a:hover {
+    color: #000; /* Change la couleur au survol */
+  }
+  
+  .contact-button {
+    margin-left: 20px; /* Sépare le bouton de contact de la barre de navigation */
+  }
+  
+  .btn-contact {
+    background-color: #6c63ff; /* Violet vif pour le bouton */
+    color: #ffffff; /* Blanc pour le texte du bouton */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    
+  }
+  
+  .btn-contact:hover {
+    background-color: #8365ec;
+    color: #fff;
+  }
+
+
+.section-below-wave p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Section projets */
+.projects-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Pour rendre les éléments responsive */
+}
+
+.project-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  color: #333;
+  width: 250px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hero-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.hero-content {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn-contact {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero-image-container {
+  position: relative;
+  width: 250px;
+  height: 250px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.profile-image {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.App-link {
+.rotate-container {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: 5%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+  animation: rotate-icons 10s infinite linear;
+}
+
+.icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
+.icon-js {
+  top: 50%;
+  left: -50px;
+  color: #f0db4f;
+}
+
+.icon-react {
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icon-css {
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #2965f1;
+}
+
+@keyframes rotate-icons {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
+}
+
+/* Animation fade-in pour le texte */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-content p, .hero-content h1 {
+  opacity: 0; /* Initialement invisible */
+  animation: fadeInUp 2s ease forwards; /* Animation */
+  color: #333333;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.hero-content p {
+  animation-delay: 0.5s; /* Délai pour le paragraphe */
+}
+
+.hero-content h1 {
+  animation-delay: 1s; /* Délai pour le h1 */
+}
+
+  
+ /**  projects */
+ .projects-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.skills-title {
+  font-size: 2rem;
+  color: white; /* Couleur blanche pour le titre */
+  margin-bottom: 30px;
+}
+.projects-content  p {
+  text-align: center;
+  font-size: 1.2rem; /* Taille du texte pour une bonne lisibilité */
+  color: #ffffff; /* Ajuste cette couleur selon ton besoin */
+  max-width: 800px; /* Limite la largeur du paragraphe */
+  margin: 0 auto 20px; /* Centrage et espace en bas */
+  line-height: 1.6; /* Améliore l'espacement des lignes */
+  padding: 10px 20px; /* Ajoute un peu d'espace autour du texte */
+}
+
+
+.project-card:hover {
+  transform: scale(1.05); /* Zoom léger au survol */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ombre légère au survol */
+}
+
+.project-image {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #f9e4d4; /* Couleur du titre des projets en harmonie avec le dégradé */
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: blueviolet;
+  margin-bottom: 15px;
+}
+
+.project-link {
+  font-size: 1rem;
+  color: #f9e4d4; /* Couleur des liens correspondant au dégradé */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #a395ea; /* Couleur au survol du lien en harmonie avec le dégradé */
+}
+
+  /** contact **/
+  .contact-section {
+    padding: 2rem;
+    background: linear-gradient(to right, #f9e4d4, #a395ea);
+    border-radius: 8px;
+    color: #333;
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    font-size: 1rem;
+    color: white;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .contact-submit-button {
+    padding: 0.8rem;
+    border: none;
+    background-color: #61dbfb;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-submit-button:hover {
+    background-color: #21a1f1;
+  }
+  
+  .thank-you-message {
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+  }
+  
+  
+ /*footer ***/
+
+ .footer-container {
+  text-align: center;
+  padding: 20px 0;
+ border-top:solid 2px  #666;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px; /* Espace entre les icônes */
+  padding: 10px;
+}
+
+.icon-container {
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 10px; /* Ajustement du padding pour un meilleur centrage */
+  width: 40px; /* Fixe la taille du conteneur pour chaque icône */
+  height: 40px; /* Fixe la taille du conteneur pour chaque icône */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.icon-container:hover {
+  transform: scale(1.1); /* Effet zoom au survol */
+}
+
+.icon {
+  color: #ebebef; /* Couleur par défaut des icônes */
+  font-size: 70px; /* Ajustement de la taille des icônes */
+  position: absolute;
+  border-radius: 50%;
+  padding: 15px;
+  text-align: center;
+
+}
+
+.icon-container:hover .icon {
+  color: #ffffff; /* Changement de couleur au survol */
+}
+
+.facebook-icon {
+  color: #4267B2;
+  font-size: 20px ;/* Couleur Facebook */
+}
+
+.twitter-icon {
+  color: #1DA1F2; /* Couleur Twitter */
+  font-size: 20px;
+}
+
+.instagram-icon {
+  color: #E1306C; /* Couleur Instagram */
+  font-size: 20px;
+}
+
+.linkedin-icon {
+  color: #0A66C2; /* Couleur LinkedIn */
+  font-size: 20px;
+}
+
+/* Ajout d'un arrière-plan coloré au survol */
+.icon-container:hover .facebook-icon {
+  background-color: #4267B2;
+}
+
+.icon-container:hover .twitter-icon {
+  background-color: #1DA1F2;
+}
+
+.icon-container:hover .instagram-icon {
+  background-color: #E1306C;
+}
+
+.icon-container:hover .linkedin-icon {
+  background-color: #0A66C2;
+}
+ /*skills ***/ 
+ .skills-section {
+  text-align: center;
+  padding: 50px;
+  color: #fff;
+}
+
+.skills-title {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 20px;
+  justify-items: center;
+  border: solid 2px;
+    border-radius: 20px;
+}
+
+.skill-item {
+ 
+  border-radius: 10px;
+  padding: 15px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-item:hover {
+  transform: scale(1.1);
+}
+
+.skill-item p {
+  margin-top: 10px;
+  font-size: 0.9rem;
 }
