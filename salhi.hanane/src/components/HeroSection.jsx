@@ -4,7 +4,7 @@ import { FaReact, FaCss3Alt, FaJsSquare } from 'react-icons/fa';
 
 function HeroSection() {
   return (
-    <div className="hero-container">
+    <section className="hero-container">
       <div className="hero-content">
         <p className="subheading">Tu me connais ?</p>
         <h1>👋 Je suis Hanane SALHI</h1>
@@ -28,7 +28,7 @@ function HeroSection() {
           </div>
         </div>
       </div>
-    </div>
+    </section >
   );
 }
 

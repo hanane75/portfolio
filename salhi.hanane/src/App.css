@@ -4,9 +4,14 @@ body, html {
   margin: 0;
   padding: 0;
 }
+section {
+  padding: 50px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Ombre douce */
+}
+
 
 .container {
- 
+ margin: 0;
   padding-left: 50px;
   padding-right: 50px;
   background: linear-gradient(to right, #f9e4d4, #a395ea);
@@ -98,14 +103,7 @@ body, html {
   flex-wrap: wrap; /* Pour rendre les éléments responsive */
 }
 
-.project-card {
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  color: #333;
-  width: 250px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
+
 
 .hero-container {
   display: flex;
@@ -242,33 +240,32 @@ body, html {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ombre légère au survol */
 }
 
+.project-card {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
 .project-image {
   max-width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.project-card h3 {
-  font-size: 1.5rem;
-  color: #f9e4d4; /* Couleur du titre des projets en harmonie avec le dégradé */
-  margin-bottom: 10px;
-}
-
-.project-card p {
-  font-size: 1rem;
-  color: blueviolet;
-  margin-bottom: 15px;
+  height: auto;
+  border-radius: 5px;
 }
 
 .project-link {
-  font-size: 1rem;
-  color: #f9e4d4; /* Couleur des liens correspondant au dégradé */
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
   text-decoration: none;
-  transition: color 0.3s ease;
 }
 
 .project-link:hover {
-  color: #a395ea; /* Couleur au survol du lien en harmonie avec le dégradé */
+  background-color: #0056b3;
 }
 
   /** contact **/
@@ -280,7 +277,10 @@ body, html {
     max-width: 600px;
     margin: 2rem auto;
   }
-  
+   .contact-section h2{
+    text-align: center;
+    color: #fff;
+   }
   .contact-form {
     display: flex;
     flex-direction: column;
@@ -409,6 +409,45 @@ body, html {
   background-color: #0A66C2;
 }
  /*skills ***/ 
+
+ @keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.skill-item {
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.skill-item:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.skill-item:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.skill-item:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.skill-item:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.skill-item:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+/* Ajoute des délais pour chaque compétence */
+
  .skills-section {
   text-align: center;
   padding: 50px;
@@ -448,3 +487,48 @@ body, html {
   margin-top: 10px;
   font-size: 0.9rem;
 }
+
+/*Service **/
+.services-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.service-item {
+  width: 200px;
+  margin: 20px;
+  text-align: center;
+}
+
+.service-icon {
+  font-size: 3em;
+  margin-bottom: 15px;
+  color: #ff4b5c;
+}
+
+.service-item h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.service-item p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.quote-button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #ff4b5c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quote-button:hover {
+  background-color: #e34450;
+}
+

@@ -6,7 +6,7 @@ import ProjectsComponent from './ProjectsComponent';
 import Footer from './Footer';
 import Skills from './Skills';
 import Contact from './Contact';
-
+import Services from './Services';
 
 const Home = () => {
   return (
@@ -16,7 +16,7 @@ const Home = () => {
         <HeroSection />
         <Skills/>
         <ProjectsComponent />
-       
+       <Services />
         <Contact />
       <Footer/>
 
