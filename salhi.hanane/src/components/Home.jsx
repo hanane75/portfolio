@@ -11,12 +11,12 @@ import Services from './Services';
 const Home = () => {
   return (
 
-    <section className='container'>
+    <section className='container '>
         <Header />
         <HeroSection />
-        <Skills/>
+        <Services />
         <ProjectsComponent />
-       <Services />
+        <Skills/>
         <Contact />
       <Footer/>
 

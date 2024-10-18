@@ -32,7 +32,7 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="contact-section">
+    <section className="contact-section padding-section">
       <h2>{"< Contactez-moi >"}</h2>
       {submitted ? (
         <div className="thank-you-message">

@@ -14,27 +14,26 @@ const ProjectsComponent = () => {
   // Configurer les options de responsive design pour le carrousel
   const responsive = {
     superLargeDesktop: {
-      // Pour les grands écrans
       breakpoint: { max: 4000, min: 1024 },
-      items: 3,
+      items: 2, // 3 éléments pour grands écrans
     },
     desktop: {
       breakpoint: { max: 1024, min: 768 },
-      items: 2,
+      items: 2, // 2 éléments pour desktop
     },
     tablet: {
       breakpoint: { max: 768, min: 464 },
-      items: 1,
+      items: 1, // 1 élément pour tablettes
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1,
+      items: 1, // 1 élément pour mobile
     },
   };
 
   return (
-    <section className="skills-projects-section">
-      <section className="projects-section">
+    <section  id='#Projects' className="skills-projects-section">
+      <section className="projects-section padding-section">
         <h2 className="skills-title">{"< projets >"}</h2>
 
         <div className="projects-content">

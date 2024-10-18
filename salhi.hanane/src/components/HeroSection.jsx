@@ -4,12 +4,12 @@ import { FaReact, FaCss3Alt, FaJsSquare } from 'react-icons/fa';
 
 function HeroSection() {
   return (
-    <section className="hero-container">
+    <section className="hero-container ">
       <div className="hero-content">
         <p className="subheading">Tu me connais ?</p>
         <h1>👋 Je suis Hanane SALHI</h1>
         <p className="hero-description">DEVELOPPEUSE WEB !</p>
-        <button className="btn-contact">Contactez-moi</button>
+        <button className="btn bg-primary text-white bg-hover-primary">Contactez-moi</button>
       </div>
 
       <div className="hero-image-container">
