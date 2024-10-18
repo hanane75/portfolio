@@ -32,7 +32,7 @@ const ProjectsComponent = () => {
   };
 
   return (
-    <section  id='#Projects' className="skills-projects-section">
+    <section  id='Projects' className="skills-projects-section">
       <section className="projects-section padding-section">
         <h2 className="skills-title">{"< projets >"}</h2>
 

@@ -4,7 +4,7 @@ import { FaCode, FaMobileAlt, FaLaptopCode, FaTools } from 'react-icons/fa'; // 
 
 const Services = () => {
   return (
-    <section id="what-i-do" className="services">
+    <section id="services" className="services">
       <h2>{" < What Do I Do >"}</h2>
       <div className="services-container">
         <div className="service-item">

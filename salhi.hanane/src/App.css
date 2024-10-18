@@ -25,16 +25,17 @@ section, .projects-section {
   margin-bottom: 70px;
 }
 
-.container, .contact-section {
+.container-fluid, .contact-section {
   margin: 0 auto;
   padding-left: 50px;
   padding-right: 50px;
   background: linear-gradient(to right, #f9e4d4, #a395ea);
   color: var(--primary-text);
   font-family: Arial, sans-serif;
-  max-width: 1200px;
+  max-width: 100%;
 }
 
+/* Styles de base pour le header */
 .header {
   display: flex;
   justify-content: space-between;
@@ -80,6 +81,60 @@ section, .projects-section {
 .nav ul li a:hover {
   color: var(--black);
 }
+
+/* Styles pour le menu hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px; /* Positionné à droite */
+  top: 20px;  /* Ajuste la distance du haut */
+  background-color: transparent; /* Fond transparent */
+  border: none; /* Supprimer les bordures */
+}
+
+.hamburger div {
+  width: 100%;
+  height: 3px;
+  background-color: var(--black); /* Couleur des barres */
+}
+
+/* Styles responsive */
+@media (max-width: 768px) {
+  .nav ul {
+    display: none;
+    flex-direction:row-reverse;
+    position: absolute;
+    top: 60px; /* Ajuste selon la hauteur de ton header */
+    right: 0;
+    background-color: none;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .nav ul.active {
+    display: flex;
+    
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav ul li {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav ul li a {
+    font-size: 1.2rem;
+  }
+}
+
 
 .btn {
   padding: 10px 20px;
@@ -227,7 +282,7 @@ section, .projects-section {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: #fff;
+  background-color: none;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px;

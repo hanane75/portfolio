@@ -11,7 +11,7 @@ import Services from './Services';
 const Home = () => {
   return (
 
-    <section className='container '>
+    <section className='container-fluid '>
         <Header />
         <HeroSection />
         <Services />
