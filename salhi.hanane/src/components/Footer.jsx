@@ -7,7 +7,7 @@ const Footer = () => {
       <p>Mes réseau sociaux </p>
       <div className="social-icons">
         
-      <a href="https://www.linkedin.com" target="_blank" rel="noreferrer" className="icon-container">
+      <a href="https://www.linkedin.com/in/hanane-salhi-81194b2ab/" target="_blank" rel="noreferrer" className="icon-container">
           <FaLinkedinIn className="icon linkedin-icon" />
         </a>
         <a href="https://www.facebook.com" target="_blank" rel="noreferrer" className="icon-container">

@@ -34,7 +34,15 @@ section, .projects-section {
   color: var(--primary-text);
   font-family: Arial, sans-serif;
   max-width: 100%;
+  
 }
+.contact-section{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
 
 /* Styles de base pour le header */
 .header {
@@ -290,7 +298,11 @@ section, .projects-section {
 .skill-item {
   animation: fadeInUp 1s ease forwards;
 }
-
+.services{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 /**Projects**/
 .projects-grid {
   display: flex;
@@ -353,11 +365,6 @@ section, .projects-section {
   background-color: #410545;
 }
 
-
-.contact-section h2 {
-  text-align: center;
-  color: var(--white);
-}
 
 .contact-form {
   display: flex;
@@ -470,10 +477,12 @@ section, .projects-section {
   color: var(--primary-text);
 }
 
-.skills-title {
+.skills-title , .contact-section h2  {
   font-family: "Courier New", Courier, monospace;
   font-size: 2rem;
   margin-bottom: 20px;
+  text-align: center;
+
 }
 
 .skills-grid {

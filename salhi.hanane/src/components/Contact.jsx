@@ -24,7 +24,7 @@ const Contact = () => {
     e.preventDefault();
 
     try {
-      // Remplacez l'URL par celle obtenue dans Getform
+     
       const response = await axios.post('https://getform.io/f/bjjeknob', formData);
 
       if (response.status === 200) {
