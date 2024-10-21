@@ -1,9 +1,7 @@
 :root {
-  --primary-bg: #6c63ff;
+  --primary-bg: #c663ff;
   --hover-bg: #8365ec;
   --btn-hover-bg: #007BFF;
-  --quote-btn-bg: #ff4b5c;
-  --quote-btn-hover-bg: #e34450;
   --white: #fff;
   --black: #333;
   --light-grey: #666;
@@ -32,7 +30,7 @@ section, .projects-section {
   padding-right: 50px;
   background: linear-gradient(to right, #f9e4d4, #a395ea);
   color: var(--primary-text);
-  font-family: Arial, sans-serif;
+  font-family: "Courier New", Courier, monospace;
   max-width: 100%;
   
 }
@@ -155,7 +153,8 @@ section, .projects-section {
 }
 
 .btn-contact {
-  background-color: var(--primary-bg);
+
+  background-color: var(--hover-bg);
 }
 
 .btn-contact:hover {
@@ -185,6 +184,7 @@ section, .projects-section {
 .profile-image {
   width: 100%;
   border-radius: 50%;
+  margin-bottom: 50px;
 }
 
 .rotate-container {
@@ -373,6 +373,16 @@ section, .projects-section {
   width: 50%;
 }
 
+@media (max-width:730px){
+  .contact-form {
+    
+    width:100%;
+  }
+  .contact-section h2{
+    font-size: 1.5rem;
+  }
+}
+
 .form-group {
   margin-bottom: 1.5rem;
 }
@@ -422,7 +432,7 @@ section, .projects-section {
   display: flex;
   justify-content: center;
   gap: 15px;
-  padding: 10px;
+  padding: 15px;
 }
 
 .icon-container {
@@ -479,7 +489,7 @@ section, .projects-section {
 
 .skills-title , .contact-section h2  {
   font-family: "Courier New", Courier, monospace;
-  font-size: 2rem;
+  font-size: 1,5rem;
   margin-bottom: 20px;
   text-align: center;
 
