@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import projectsData from '../Data/projectsData.json';
-
+import { FaGithub} from "react-icons/fa";
 const ProjectsComponent = () => {
   const [projects, setProjects] = useState([]);
 
@@ -53,8 +53,8 @@ const ProjectsComponent = () => {
               <img src={project.image} alt={project.title} className="project-image" />
               <h3>{project.title}</h3>
               <p>{project.description}</p>
-              <a href={project.url} className="project-link">
-                En savoir plus
+              <a href={project.url} className="project-link"><FaGithub size={20} color="#333" />
+              {" Voir demo >>>"}
               </a>
             </div>
           ))}
