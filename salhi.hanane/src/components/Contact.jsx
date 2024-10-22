@@ -49,7 +49,7 @@ const Contact = () => {
   };
 
   return (
-    <section id='contact' className="contact-section padding-section">
+    <section id="contact" className="contact-section padding-section">
       <h2>{"< Contactez-moi >"}</h2>
       
       {/* Formulaire */}
