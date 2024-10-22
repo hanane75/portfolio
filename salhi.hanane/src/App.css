@@ -129,6 +129,7 @@ section, .projects-section {
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+    padding-left: 15px;
   }
 
   .hamburger {
@@ -191,25 +192,26 @@ section, .projects-section {
 
 .rotate-container {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
+  width: 250px; /* Taille du chemin de rotation */
+  height: 250px;
   transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  animation: rotate 10s linear infinite;
 }
 
 .rotate-container .icon {
-  margin: 0 1rem;
-  animation: rotate 10s infinite linear;
+  position: absolute;
+  width: 40px;
+  height: 40px;
 }
 
 @keyframes rotate {
   from {
-    transform: rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 
@@ -255,22 +257,23 @@ section, .projects-section {
 }
 
 .icon-js {
-  top: -20px;
-  left: 15%;
+  top: -30px;
+  left: 50%;
   transform: translateX(-50%);
 }
 
 .icon-react {
+  left: 0;
   top: 50%;
-  left: -15px;
   transform: translateY(-50%);
 }
 
 .icon-css {
+  right: 0;
   top: 50%;
-  right: -15px;
   transform: translateY(-50%);
 }
+
 
 @keyframes rotate-icons {
   0% {
