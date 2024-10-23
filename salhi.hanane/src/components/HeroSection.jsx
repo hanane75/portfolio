@@ -3,7 +3,7 @@ import { FaReact, FaCss3Alt, FaJsSquare } from 'react-icons/fa';
 
 function HeroSection() {
   const [displayedText, setDisplayedText] = useState("");
-  const fullText = " Une développeuse web passionnée. Mon objectif est de créer des expériences utilisateur captivantes et fonctionnelles !";
+  const fullText = "Une développeuse web passionnée. Mon objectif est de créer des expériences utilisateur captivantes et fonctionnelles !";
 
   useEffect(() => {
     let index = 0;
@@ -18,13 +18,23 @@ function HeroSection() {
     return () => clearInterval(interval); // Nettoie l'intervalle
   }, [fullText]);
 
+  // Fonction pour gérer la redirection vers la section contact
+  const handleScrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="hero-container">
       <div className="hero-content">
         <p className="subheading">Tu me connais ?</p>
         <h1>👋 Je suis Hanane SALHI</h1>
         <p className="hero-description">{displayedText}</p>
-        <button className="btn bg-primary text-white bg-hover-primary">Contactez-moi</button>
+        <button onClick={handleScrollToContact} className="btn bg-primary text-white bg-hover-primary">
+          Contactez-moi
+        </button>
       </div>
 
       <div className="hero-image-container">

@@ -81,7 +81,7 @@ section, .projects-section {
 
 .nav ul li a {
   text-decoration: none;
-  color: var(--light-grey);
+  color: black;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -151,13 +151,14 @@ section, .projects-section {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  color: var(--primary-text);
+  color: rgb(239, 227, 227) !important;
   border: none;
+  background-color: rgb(64 11 108) !important;
 }
 
 .btn-contact {
 
-  background-color: var(--hover-bg);
+  background-color: rgb(64 11 108) !important;
 }
 
 .btn-contact:hover {
@@ -255,7 +256,10 @@ section, .projects-section {
     justify-content: space-between;
     text-align: left;
   }
-
+.rotate-container{
+  width: 350px;
+    height: 350px;
+}
   .hero-content {
     flex: 1;
     padding-right: 2rem;
@@ -554,16 +558,36 @@ section, .projects-section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
 }
 
+/* Effet au survol (hover) */
 .skill-item:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /* Agrandissement au survol */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre plus grande */
 }
 
+/* Style du texte dans skill-items */
 .skill-item p {
   margin-top: 10px;
   font-size: 0.9rem;
+  color: #333; /* Couleur du texte */
+  transition: color 0.3s ease; /* Transition douce de la couleur du texte */
+}
+/* Effet au survol du texte */
+.skill-item:hover p {
+  color: #ffb400; /* Change la couleur du texte au survol */
+}
+
+/* Effet au survol des icônes dans skill-items */
+.skill-item svg {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.skill-item:hover svg {
+  color: #ffb400; /* Change la couleur de l'icône au survol */
+  transform: rotate(10deg); /* Ajoute une légère rotation au survol */
 }
 
 /* Services Section */
@@ -585,7 +609,7 @@ section, .projects-section {
   text-align: center;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  background: #ffff;
+  background: rgba(255, 255, 255, 0.15);;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
