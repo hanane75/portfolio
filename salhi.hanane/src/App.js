@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/Home';
 import ProjectsComponent from './components/ProjectsComponent';
@@ -19,4 +18,4 @@ const App = () => (
 );
 
 export default App;
-ReactDOM.render(<App />, document.getElementById('root'));
+
