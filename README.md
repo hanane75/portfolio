@@ -8,9 +8,7 @@ Bienvenue sur mon portfolio ! Ce projet présente mes compétences, mes projets 
 - [Fonctionnalités](#fonctionnalités)
 - [Installation](#installation)
 - [Utilisation](#utilisation)
-- [Contributions](#contributions)
-- [Auteurs](#auteurs)
-- [Licence](#licence)
+
 
 ## Technologies Utilisées
 
@@ -33,7 +31,7 @@ Bienvenue sur mon portfolio ! Ce projet présente mes compétences, mes projets 
 Pour cloner ce projet sur votre machine locale, exécutez la commande suivante :
 
 ```bash
-git clone https://github.com/votre-utilisateur/nom-du-repo.git
+git clone (https://github.com/hanane75/portfolio.git)
 
 ##Auteurs
 Hanane Salhi - Votre profil GitHub
