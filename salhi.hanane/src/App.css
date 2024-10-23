@@ -5,7 +5,7 @@
   --white: #fff;
   --black: #333;
   --light-grey: #666;
-  --primary-text: #76089c;
+  --primary-text: #000000;
   --box-shadow-light: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 html, body {
@@ -178,11 +178,12 @@ section, .projects-section {
   margin-bottom: 2rem;
 }
 
-.hero-image-container {
-  position: relative;
-  width: 100%;
-  max-width: 400px;
-}
+  .hero-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+  }
+
 
 .profile-image {
   width: 100%;
@@ -192,8 +193,8 @@ section, .projects-section {
 
 .rotate-container {
   position: absolute;
-  top: 40%;
-  left: 50%;
+  top: 50%; /* Centrage vertical */
+  left: 50%; /* Centrage horizontal */
   width: 250px; /* Taille du chemin de rotation */
   height: 250px;
   transform: translate(-50%, -50%);
@@ -214,6 +215,38 @@ section, .projects-section {
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
+.icon {
+  width: 10vw; /* Utilisation de vw pour que les icônes s'ajustent selon la largeur de la fenêtre */
+  height: 10vw;
+}
+
+.icon-js {
+  top: -15%; /* Ajusté pour que ça reste autour de l'image */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icon-react {
+  left: -10%; /* Réduit pour mobile et ajusté à gauche */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.icon-css {
+  right: -10%; /* Réduit pour mobile et ajusté à droite */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+@keyframes rotate-icons {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 /* Media query pour les tablettes */
 @media (min-width: 768px) {
@@ -231,6 +264,15 @@ section, .projects-section {
   .hero-image-container {
     flex: 1;
   }
+  .icon-js {
+    top: -20%; /* Ajusté pour écrans plus grands */
+  }
+  .icon-react {
+    left: -15%; /* Déplacement plus marqué sur les écrans larges */
+  }
+  .icon-css {
+    right: -15%;
+  }
 }
 
 /* Media query pour les grands écrans */
@@ -246,43 +288,30 @@ section, .projects-section {
   .rotate-container .icon {
     margin: 0 1.5rem;
   }
-}
-
-
-.icon {
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  color: #61dafb;
-}
-
-.icon-js {
-  top: -30px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.icon-react {
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.icon-css {
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-
-@keyframes rotate-icons {
-  0% {
-    transform: rotate(0deg);
+  .rotate-container{
+    top: 40%;
+    left: 40%;
+    width: 270px;
+    height: 270px;
   }
-  100% {
-    transform: rotate(360deg);
+  .icon {
+    width: 7vw; /* Réduction de la taille des icônes sur grand écran */
+    height: 7vw;
+  }
+
+  .icon-js {
+    top: -28%;
+  }
+  .icon-react {
+    left: -20%;
+  }
+  .icon-css {
+    right: -20%;
   }
 }
+
+
+
 
 @keyframes fadeInUp {
   from {
@@ -319,7 +348,7 @@ section, .projects-section {
 .projects-content p, .section-below-wave p {
   text-align: center;
   font-size: 1.2rem;
-  color:  #76089c;
+  color: #666666;
   max-width: 800px;
   margin: 0 auto 20px;
   line-height: 1.6;
@@ -394,7 +423,7 @@ section, .projects-section {
     width:100%;
   }
   .contact-section h2{
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -547,20 +576,34 @@ section, .projects-section {
   justify-content: space-around;
   flex-wrap: wrap;
   text-align: center;
+  gap: 20px;
 }
 
 .service-item {
-  width: 200px;
-  margin: 20px;
+  width: 250px;
+ padding: 20px;
   text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background: #ffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .service-icon {
-  font-size: 3em;
+  font-size: 3rem;
   margin-bottom: 15px;
-  color: var(--quote-btn-bg);
+  transition: color 0.3s ease, transform 0.3s ease;
+  color: #4B0082; /* Violet foncé ou une autre couleur selon ton choix */
 }
-
+.service-item:hover .service-icon {
+  color: #FF6347; /* Couleur au survol, par exemple un rouge orangé */
+  transform: scale(1.2);
+}
 .service-item h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;

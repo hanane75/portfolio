@@ -9,23 +9,23 @@ const Services = () => {
       <div className="services-container">
         <div className="service-item">
           <FaCode className="service-icon" />
-          <h3>Landing Pages and Websites</h3>
-          <p>Design of any complexity</p>
+          <h3>Création de Sites Web et Landing Pages</h3>
+          <p>Conception sur mesure, quelle que soit la complexité</p>
         </div>
         <div className="service-item">
           <FaMobileAlt className="service-icon" />
-          <h3>Responsive Layout</h3>
-          <p>For all kinds of browsers and devices</p>
+          <h3>Design Adaptatif</h3>
+          <p>Optimisé pour tous les navigateurs et appareils</p>
         </div>
         <div className="service-item">
           <FaLaptopCode className="service-icon" />
-          <h3>Frontend Development</h3>
-          <p>And programming</p>
+          <h3>Développement Frontend</h3>
+          <p>Programmation et intégration de solutions modernes</p>
         </div>
         <div className="service-item">
           <FaTools className="service-icon" />
-          <h3>Patching and Adaptation</h3>
-          <p>Of legacy design</p>
+          <h3>Mise à jour et Adaptation</h3>
+          <p>Réparation et amélioration de designs existants</p>
         </div>
       </div>
      
