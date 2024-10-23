@@ -39,7 +39,7 @@ const ProjectsComponent = () => {
   };
 
   return (
-    <section id="projects" className="skills-projects-section">
+    <div id="projects" className="skills-projects-section">
       <section className="projects-section padding-section">
         <h2 className="skills-title">{"< projets >"}</h2>
         <div className="projects-content">
@@ -87,7 +87,7 @@ const ProjectsComponent = () => {
           ))}
         </Carousel>
       </section>
-    </section>
+    </div>
   );
 };
 

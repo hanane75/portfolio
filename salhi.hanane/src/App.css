@@ -14,15 +14,15 @@ html, body {
   box-sizing: border-box;
   width: 100vw; /* Utilise 100% de la largeur de la fenêtre */
   overflow-x: hidden; /* Empêche le défilement horizontal */
-  font-family: "Courier New", Courier, monospace !important;
+  font-family: "Courier New", Courier, monospace , sans-serif !important;
  
 }
 
 section, .projects-section {
  
   box-shadow: var(--box-shadow-light);
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin: 20px auto; /* Centrage automatique */
+  padding: 20px; /* Ajout de padding pour plus d'espace */
 }
 
 .container-fluid, .contact-section {
@@ -148,12 +148,13 @@ section, .projects-section {
 
 
 .btn {
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 12px 24px;
+  border-radius: 8px;
   cursor: pointer;
   color: rgb(239, 227, 227) !important;
   border: none;
   background-color: rgb(64 11 108) !important;
+  transition: background-color 0.3s, transform 0.3s; /* Ajout d'une transition pour l'effet au survol */
 }
 
 .btn-contact {
@@ -163,6 +164,7 @@ section, .projects-section {
 
 .btn-contact:hover {
   background-color: var(--hover-bg);
+  transform: scale(1.05); /* Légère augmentation de taille au survol */
 }
 
 /**hero section */
@@ -379,6 +381,7 @@ section, .projects-section {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px;
+  height: 700px;
 }
 
 .project-image {
@@ -396,12 +399,13 @@ section, .projects-section {
 .project-card p {
   font-size: 1rem;
   text-align: center;
-  color:blueviolet;
+  color:#410578;
+ 
 }
 
 .project-link {
   margin-top: 10px;
-  padding: 10px 20px;
+ 
   font-weight: 600;
   color: white;
   text-decoration: none;
@@ -473,7 +477,7 @@ section, .projects-section {
   text-align: center;
   padding: 20px 0;
   border-top: solid 2px #666;
-  
+ 
 }
 
 .social-icons {
@@ -513,8 +517,8 @@ section, .projects-section {
   font-size: 20px;
 }
 
-.twitter-icon {
-  color: #1DA1F2;
+.github-icon {
+  color: #37393a;
   font-size: 20px;
 }
 
