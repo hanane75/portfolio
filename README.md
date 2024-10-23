@@ -12,8 +12,7 @@ Bienvenue sur mon portfolio ! Ce projet présente mes compétences, mes projets 
 
 ## Technologies Utilisées
 
-- HTML5
-- CSS3
+- react
 - JavaScript
 - [Framework CSS](https://getbootstrap.com/) 
 - [Bibliothèque JavaScript](https://reactjs.org/) 
