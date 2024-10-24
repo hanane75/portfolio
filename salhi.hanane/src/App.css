@@ -812,6 +812,7 @@ font-weight: 600;
   color: #330343; /* Couleur du texte */
   margin-bottom: 20px; /* Espacement en bas */
   padding-top: 50px;
+  padding-right: 50px;
 }
 
 .back-button:hover {
