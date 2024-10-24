@@ -15,16 +15,20 @@ const ProjectDetails = () => {
 
   return (
     <section id="Home" className='container-fluid '>
-         <div className="logo">
-       <Link to="/">
-       <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" />
+         <div  className='headerdetail'>
+            <div className="logo">
+            <Link to="/">
+       <img   src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" />
        </Link>
-      </div>
-       {/* Flèche de retour */}
-       <Link to="/" className="back-button">
+            </div>
+       
+        {/* Flèche de retour */}
+        <Link to="/" className="back-button">
           <FaArrowLeft /> {/* Utilisation d'une icône de flèche */}
           Retour à l'accueil
         </Link>
+      </div>
+      
     <div className="project-details">
       <img src={project.image} alt={project.title} className="project-image" />
       <h2>{project.title}</h2>

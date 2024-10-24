@@ -7,7 +7,7 @@ import Footer from './Footer';
 import Skills from './Skills';
 import Contact from './Contact';
 import Services from './Services';
-import { Helmet } from 'react-helmet';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 const Home = () => {
   const schemaOrganization = {
     "@context": "https://schema.org",
@@ -22,7 +22,7 @@ const Home = () => {
   };
 
   return (
-
+<HelmetProvider>
     <section id="Home" className='container-fluid '>
       
       <Helmet>
@@ -44,7 +44,7 @@ const Home = () => {
      
   
     </section>
-   
+    </HelmetProvider>
   );
 };
 

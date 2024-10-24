@@ -205,6 +205,7 @@ section, .projects-section {
   width: 100%;
   border-radius: 50%;
   margin-bottom: 50px;
+  margin-top: 20px;
 }
 
 .rotate-container {
@@ -411,7 +412,7 @@ section, .projects-section {
 }
 
 .project-card p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   text-align: center;
   color:#410578;
  
@@ -808,11 +809,18 @@ font-weight: 600;
   display: flex;
   align-items: center;
   text-decoration: none; /* Enlève le soulignement du lien */
-  color: #007bff; /* Couleur du texte */
+  color: #330343; /* Couleur du texte */
   margin-bottom: 20px; /* Espacement en bas */
   padding-top: 50px;
 }
 
 .back-button:hover {
   color: #0056b3; /* Couleur au survol */
+}
+.headerdetail{
+  display: flex;
+  align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    gap :40px;
 }
