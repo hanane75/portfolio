@@ -13,7 +13,7 @@ function HeroSection() {
       if (index >= fullText.length) {
         clearInterval(interval);
       }
-    }, 100); // Change la vitesse ici (100 ms par lettre)
+    }, 50);
 
     return () => clearInterval(interval); // Nettoie l'intervalle
   }, [fullText]);

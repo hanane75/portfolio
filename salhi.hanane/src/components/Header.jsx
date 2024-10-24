@@ -13,7 +13,6 @@ const Header = () => {
       <div className="logo">
         <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" />
       </div>
-
       <div className="hamburger" onClick={toggleMenu}>
         <div></div>
         <div></div>

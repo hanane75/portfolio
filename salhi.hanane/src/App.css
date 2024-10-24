@@ -22,13 +22,12 @@ section, .projects-section {
  
   box-shadow: var(--box-shadow-light);
   margin: 20px auto; /* Centrage automatique */
-  padding: 20px; /* Ajout de padding pour plus d'espace */
+  padding: 50px; /* Ajout de padding pour plus d'espace */
 }
 
 .container-fluid, .contact-section {
   margin: 0 auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 0 20px ;
   background: linear-gradient(to right, #f9e4d4, #a395ea);
   color: var(--primary-text);
   font-family: "Courier New", Courier, monospace;
@@ -49,6 +48,10 @@ section, .projects-section {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  position: sticky; /* ou fixed */
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Pour qu'il soit au-dessus d'autres éléments */
 }
 
 .logo {
@@ -57,7 +60,7 @@ section, .projects-section {
 }
 
 .logo img {
-  width: 80px; 
+  width: 100px; 
   height: auto;
 }
 
@@ -77,6 +80,7 @@ section, .projects-section {
   list-style: none;
   gap: 20px;
   padding-right: 50px;
+  cursor: pointer;
 }
 
 .nav ul li a {
@@ -84,6 +88,7 @@ section, .projects-section {
   color: black;
   font-size: 1rem;
   font-weight: 600;
+
 }
 
 .nav ul li a:hover {
@@ -181,6 +186,12 @@ section, .projects-section {
 
 .hero-content {
   margin-bottom: 2rem;
+}
+.hero-content p {
+  FONT-WEIGHT: 600 ;
+}
+.hero-content h1{
+  font-weight: 700;
 }
 
   .hero-image-container {
@@ -371,6 +382,7 @@ section, .projects-section {
   padding: 0;
   font-size: 16px;
   padding-left: 15px;
+  text-align: center;
 }
 
 .project-card {
@@ -383,7 +395,7 @@ section, .projects-section {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 10px;
-  height: 700px;
+  height: 800px;
 }
 
 .project-image {
@@ -399,7 +411,7 @@ section, .projects-section {
 }
 
 .project-card p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-align: center;
   color:#410578;
  
@@ -416,7 +428,7 @@ section, .projects-section {
 }
 
 .project-link:hover {
-  background-color: #410545;
+  background-color: #aa90ac;
 }
 
 
@@ -546,7 +558,7 @@ section, .projects-section {
   font-size: 1,5rem;
   margin-bottom: 20px;
   text-align: center;
-
+font-weight: 600;
 }
 
 .skills-grid {
@@ -581,10 +593,7 @@ section, .projects-section {
   color: #333; /* Couleur du texte */
   transition: color 0.3s ease; /* Transition douce de la couleur du texte */
 }
-/* Effet au survol du texte */
-.skill-item:hover p {
-  color: #ffb400; /* Change la couleur du texte au survol */
-}
+
 
 /* Effet au survol des icônes dans skill-items */
 .skill-item svg {
@@ -641,4 +650,168 @@ section, .projects-section {
 
 .service-item p {
   font-size: 1rem;
+}
+
+
+/* Styles pour la modal */
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.75); /* Fond assombri */
+  z-index: 1000;
+}
+
+.ReactModal__Content {
+  background-color: #fff; /* Fond blanc */
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 700px;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+  .ReactModal__Content {
+    max-width: 95%; /* Augmente la largeur pour s'adapter à l'écran */
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.modal-header h2 {
+  font-size: 24px;
+  color: #333;
+  font-weight: 600;
+}
+
+
+.modal-content {
+  padding: 20px;
+  width: 100%;
+}
+
+.modal-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ff5a5f; /* Une couleur similaire à celle dans ton exemple */
+}
+
+.modal-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.modal-skills {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.modal-skills li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.modal-skills li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #ff5a5f; /* Même couleur que le titre pour garder l'harmonie */
+  font-size: 20px;
+  line-height: 1;
+}
+
+
+.modal-footer {
+  text-align: right;
+}
+
+.modal-footer button {
+  background-color: #823582;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.modal-footer button:hover {
+  background-color: #370635;
+}
+
+/* Animation de la modal */
+.ReactModal__Content--after-open {
+  opacity: 0;
+  animation: fadeIn 0.3s forwards;
+}
+
+.ReactModal__Content--before-close {
+  opacity: 1;
+  animation: fadeOut 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.project-details-btn{
+  
+  color: hsl(0, 0%, 100%); /* Couleur du texte (bleu) */
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 16px;
+  padding: 8px 16px;
+ border: none;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.project-details{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+
+}
+.back-button {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Enlève le soulignement du lien */
+  color: #007bff; /* Couleur du texte */
+  margin-bottom: 20px; /* Espacement en bas */
+}
+
+.back-button:hover {
+  color: #0056b3; /* Couleur au survol */
 }

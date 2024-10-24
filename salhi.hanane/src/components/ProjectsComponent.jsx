@@ -3,37 +3,35 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import projectsData from '../Data/projectsData.json';
 import { FaGithub } from "react-icons/fa";
+import { Link } from 'react-router-dom'; // Importer Link
 
 const ProjectsComponent = () => {
   const [projects, setProjects] = useState([]);
-  const [showFullText, setShowFullText] = useState(false); // État pour basculer le texte
+  const [showFullText, setShowFullText] = useState(false);
 
   useEffect(() => {
-    // Charger les projets depuis le fichier JSON
     setProjects(projectsData);
   }, []);
 
-  // Configurer les options de responsive design pour le carrousel
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 1024 },
-      items: 3, // 3 éléments pour grands écrans
+      items: 3,
     },
     desktop: {
       breakpoint: { max: 1024, min: 768 },
-      items: 2, // 2 éléments pour desktop
+      items: 2,
     },
     tablet: {
       breakpoint: { max: 768, min: 464 },
-      items: 1, // 1 élément pour tablettes
+      items: 1,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1, // 1 élément pour mobile
+      items: 1,
     },
   };
 
-  // Fonction pour basculer entre le texte tronqué et le texte complet
   const toggleText = () => {
     setShowFullText(!showFullText);
   };
@@ -45,29 +43,24 @@ const ProjectsComponent = () => {
         <div className="projects-content">
           <p>
             {showFullText ? (
-              // Texte complet
-              <>
-                Explorez les projets web innovants réalisés par SALHI Hanane, une développeuse web passionnée basée à Paris.
-                Avec un œil avisé pour le design moderne et la fonctionnalité, je concrétise vos idées numériques. Mon portfolio
-                présente une gamme de projets achevés, mettant en avant mes compétences techniques et mon engagement pour la qualité.
-                Interagissez avec des éléments interactifs et des animations qui reflètent ma dévotion à créer des expériences web impactantes.
-              </>
+           <>
+           Explorez les projets web innovants réalisés par SALHI Hanane, une développeuse web passionnée basée à Paris.
+           Avec un œil avisé pour le design moderne et la fonctionnalité, je concrétise vos idées numériques. Mon portfolio
+           présente une gamme de projets achevés, mettant en avant mes compétences techniques et mon engagement pour la qualité.
+           Interagissez avec des éléments interactifs et des animations qui reflètent ma dévotion à créer des expériences web impactantes.
+         </>
             ) : (
-              // Texte tronqué (version courte)
               <>
-                Explorez les projets web innovants réalisés par SALHI Hanane.
-                Avec un œil avisé pour le design moderne et la fonctionnalité, je concrétise vos idées numériques...
-              </>
+              Explorez les projets web innovants réalisés par SALHI Hanane.
+              Avec un œil avisé pour le design moderne et la fonctionnalité, je concrétise vos idées numériques...
+            </>
             )}
           </p>
-
-          {/* Bouton pour basculer entre "Lire plus" et "Lire moins" */}
           <button onClick={toggleText} className="show-more-btn">
             {showFullText ? "Lire moins" : "Lire plus"}
           </button>
         </div>
 
-        {/* Carrousel pour afficher plusieurs projets à la fois */}
         <Carousel
           responsive={responsive}
           infinite={true}
@@ -80,12 +73,20 @@ const ProjectsComponent = () => {
               <img src={project.image} alt={project.title} className="project-image" />
               <h3>{project.title}</h3>
               <p>{project.description}</p>
+              <Link to={`/projects/${project.id}`} className="project-details-btn">
+                {"Plus de détails >>>"} 
+              </Link>
               <a href={project.url} className="project-link">
-                <FaGithub size={20} color="#333" />{" Voir demo >>>"}
+                <FaGithub size={20} color="#333" />{" Voir code >>>"}
               </a>
             </div>
+             
+            
           ))}
         </Carousel>
+
+        
+      
       </section>
     </div>
   );

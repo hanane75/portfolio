@@ -1,27 +1,55 @@
 [
+  
     {
       "id": 1,
       "title": "BOOKI",
-      "description": "Créer un prototype de site en intégrant la maquette conçue par le designer UI, en HTML et CSS. Le site doit être responsive..",
+      "description": "Créer un prototype de site en intégrant la maquette conçue par le designer UI, en HTML et CSS. Le site doit être responsive.",
       "url": "https://github.com/hanane75/projet3-Booki",
       "technologies": ["HTML", "CSS"],
-      "image": "booki.png"
+      "image": "booki.png",
+      "details": "Pour ce projet, j’interviens comme développeur web au sein de la start-up Booki (agence de voyage) pour créer la page d’accueil de leur site.\nCe site internet doit permettre aux usagers de pouvoir trouver facilement des hébergements et des activités dans la ville de leur choix.\nIl faudra bien respecter l’architecture suivante :\n\nUn fichier “index.html” contenant une première base du code HTML que tu devras compléter.\nUn dossier “css” contenant un fichier “style.css” avec une première ébauche du code CSS que tu devras compléter également.\nUn dossier “images” contenant l’ensemble des images utilisées sur le site.",
+      "competences": [
+        "Mettre en œuvre des effets CSS graphiques avancés",
+        "Mettre en place une structure de navigation pour un site web",
+        "Assurer la cohérence graphique d'un site web",
+        "Utiliser un système de gestion de versions pour le suivi du projet et son hébergement",
+        "Mettre en place son environnement Front-End"
+      ]
     },
+  
+  
+  
     {
       "id": 2,
-      "title": "OhMyFood",
-      "description": "Intégrer la maquette créée par le designer UI en mobilefirst en respectant les contraintes graphiques et d'animations, sans utiliser de JavaScript.",
-      "url": "https://github.com/hanane75/projet4-ohmyfood",
-      "technologies": ["HTML", "CSS","SASS"],
-      "image": "ohmyfood.png"
-    },
+      "title": "Ohmyfood",
+      "description": "Développement d'un site mobile first répertoriant les menus de restaurants gastronomiques avec des options de réservation et de composition de repas.",
+      "url": "https://github.com/hanane75/projet4-Ohmyfood",
+      "technologies": ["HTML", "CSS (SASS)", "Responsive Design", "Animations CSS"],
+      "image": "ohmyfood.png",
+      "details": "Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et de réduire leur temps d'attente dans les restaurants car leur menu est préparé à l'avance. Plus de perte de temps à consulter la carte !",
+      "competences": [
+        "Mettre en œuvre des effets CSS graphiques avancés",
+        "Mettre en place une structure de navigation pour un site web",
+        "Assurer la cohérence graphique d'un site web",
+        "Utiliser un système de gestion de versions pour le suivi du projet et son hébergement",
+        "Mettre en place son environnement Front-End"
+      ]
+   },
     {
       "id": 3,
       "title": "Kasa",
       "description": " Créez une application web de location immobilière avec React",
       "url": "https://github.com/hanane75/projet7-kasa",
       "technologies": ["React","Node.js"],
-      "image": "kasa.png"
+      "image": "kasa.png",
+      "details": "Pour ce projet, j’interviens comme développeur web au sein de la start-up Booki (agence de voyage) pour créer la page d’accueil de leur site.\nCe site internet doit permettre aux usagers de pouvoir trouver facilement des hébergements et des activités dans la ville de leur choix.\nIl faudra bien respecter l’architecture suivante :\n\nUn fichier “index.html” contenant une première base du code HTML que tu devras compléter.\nUn dossier “css” contenant un fichier “style.css” avec une première ébauche du code CSS que tu devras compléter également.\nUn dossier “images” contenant l’ensemble des images utilisées sur le site.",
+      "competences": [
+        "Mettre en œuvre des effets CSS graphiques avancés",
+        "Mettre en place une structure de navigation pour un site web",
+        "Assurer la cohérence graphique d'un site web",
+        "Utiliser un système de gestion de versions pour le suivi du projet et son hébergement",
+        "Mettre en place son environnement Front-End"
+      ]
     },
     {
       "id": 4,
@@ -29,7 +57,15 @@
       "description": "Optimisez le référencement d'un site de photographe",
       "url": "https://github.com/hanane75/ninacarducci",
       "technologies": ["HTML", "CSS","JAVAScript"],
-      "image": "nina.jpg"
+      "image": "nina.jpg",
+      "details": "Pour ce projet, j’interviens comme développeur web au sein de la start-up Booki (agence de voyage) pour créer la page d’accueil de leur site.\nCe site internet doit permettre aux usagers de pouvoir trouver facilement des hébergements et des activités dans la ville de leur choix.\nIl faudra bien respecter l’architecture suivante :\n\nUn fichier “index.html” contenant une première base du code HTML que tu devras compléter.\nUn dossier “css” contenant un fichier “style.css” avec une première ébauche du code CSS que tu devras compléter également.\nUn dossier “images” contenant l’ensemble des images utilisées sur le site.",
+      "competences": [
+        "Mettre en œuvre des effets CSS graphiques avancés",
+        "Mettre en place une structure de navigation pour un site web",
+        "Assurer la cohérence graphique d'un site web",
+        "Utiliser un système de gestion de versions pour le suivi du projet et son hébergement",
+        "Mettre en place son environnement Front-End"
+      ]
     }
   ]
   

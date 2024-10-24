@@ -4,7 +4,7 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn ,  FaGithub } from 'react-icons/
 const Footer = () => {
   return (
     <footer className="footer-container">
-      <p>Mes réseau sociaux </p>
+      <p>Mes réseaux sociaux </p>
       <div className="social-icons">
         
       <a href="https://www.linkedin.com/in/hanane-salhi-81194b2ab/" target="_blank" rel="noreferrer" className="icon-container">
@@ -21,7 +21,7 @@ const Footer = () => {
         </a>
        
       </div>
-      <p>SALHI Hanane : tous droit réserver</p>
+      <p>SALHI Hanane : tous droits réservés</p>
     </footer>
   );
 };
