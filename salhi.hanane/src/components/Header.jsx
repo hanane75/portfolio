@@ -11,7 +11,9 @@ const Header = () => {
   return (
     <header className="header">
       <div className="logo">
-        <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" />
+       <Link to="/">
+       <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" />
+       </Link>
       </div>
       <div className="hamburger" onClick={toggleMenu}>
         <div></div>

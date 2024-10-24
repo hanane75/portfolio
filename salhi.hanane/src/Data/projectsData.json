@@ -7,13 +7,13 @@
       "url": "https://github.com/hanane75/projet3-Booki",
       "technologies": ["HTML", "CSS"],
       "image": "booki.png",
-      "details": "Pour ce projet, j’interviens comme développeur web au sein de la start-up Booki (agence de voyage) pour créer la page d’accueil de leur site.\nCe site internet doit permettre aux usagers de pouvoir trouver facilement des hébergements et des activités dans la ville de leur choix.\nIl faudra bien respecter l’architecture suivante :\n\nUn fichier “index.html” contenant une première base du code HTML que tu devras compléter.\nUn dossier “css” contenant un fichier “style.css” avec une première ébauche du code CSS que tu devras compléter également.\nUn dossier “images” contenant l’ensemble des images utilisées sur le site.",
+      "details": "Pour ce projet, j’interviens comme développeur web au sein de la start-up Booki (agence de voyage) pour créer la page d’accueil de leur site.\nCe site internet doit permettre aux usagers de pouvoir trouver facilement des hébergements et des activités dans la ville de leur choix.\nIl faudra bien respecter l’architecture suivante :\n\n Un fichier “index.html” contenant une première base du code HTML que tu devras compléter.\nUn dossier “css” contenant un fichier “style.css” avec une première ébauche du code CSS que tu devras compléter également.\nUn dossier “images” contenant l’ensemble des images utilisées sur le site.",
       "competences": [
-        "Mettre en œuvre des effets CSS graphiques avancés",
-        "Mettre en place une structure de navigation pour un site web",
-        "Assurer la cohérence graphique d'un site web",
-        "Utiliser un système de gestion de versions pour le suivi du projet et son hébergement",
-        "Mettre en place son environnement Front-End"
+        "Maîtrise des Langages de Base",
+        "Analyse et Interprétation des Maquettes",
+        "Responsive Design",
+        "Sémantique Web",
+        "Pratiques de Codage Propres"
       ]
     },
   
@@ -42,13 +42,13 @@
       "url": "https://github.com/hanane75/projet7-kasa",
       "technologies": ["React","Node.js"],
       "image": "kasa.png",
-      "details": "Pour ce projet, j’interviens comme développeur web au sein de la start-up Booki (agence de voyage) pour créer la page d’accueil de leur site.\nCe site internet doit permettre aux usagers de pouvoir trouver facilement des hébergements et des activités dans la ville de leur choix.\nIl faudra bien respecter l’architecture suivante :\n\nUn fichier “index.html” contenant une première base du code HTML que tu devras compléter.\nUn dossier “css” contenant un fichier “style.css” avec une première ébauche du code CSS que tu devras compléter également.\nUn dossier “images” contenant l’ensemble des images utilisées sur le site.",
+      "details": "Pour ce projet, L'objectif est de développer le front-end d'une application de location de logements en utilisant React et React Router, en suivant les maquettes fournies et en utilisant des données simulées extraites d'un fichier JSON.",
       "competences": [
-        "Mettre en œuvre des effets CSS graphiques avancés",
-        "Mettre en place une structure de navigation pour un site web",
-        "Assurer la cohérence graphique d'un site web",
-        "Utiliser un système de gestion de versions pour le suivi du projet et son hébergement",
-        "Mettre en place son environnement Front-End"
+        "Développer une interface web avec Sass.",
+        "Initialiser une application avec Create React App.",
+        "Configurer la navigation entre les pages de l’application avec React Router.",
+        "Développer des éléments de l’interface d’un site web grâce à des composants React.",
+        "Mettre en œuvre des animations CSS."
       ]
     },
     {
@@ -56,15 +56,13 @@
       "title": "ninacarducci",
       "description": "Optimisez le référencement d'un site de photographe",
       "url": "https://github.com/hanane75/ninacarducci",
-      "technologies": ["HTML", "CSS","JAVAScript"],
+      "technologies": ["HTML", "CSS","JavaScript","Bootstrap","jquery"],
       "image": "nina.jpg",
-      "details": "Pour ce projet, j’interviens comme développeur web au sein de la start-up Booki (agence de voyage) pour créer la page d’accueil de leur site.\nCe site internet doit permettre aux usagers de pouvoir trouver facilement des hébergements et des activités dans la ville de leur choix.\nIl faudra bien respecter l’architecture suivante :\n\nUn fichier “index.html” contenant une première base du code HTML que tu devras compléter.\nUn dossier “css” contenant un fichier “style.css” avec une première ébauche du code CSS que tu devras compléter également.\nUn dossier “images” contenant l’ensemble des images utilisées sur le site.",
+      "details": "Ce projet est le portfolio en ligne de Nina Carducci, une photographe basée à Bordeaux. Il a été amélioré pour assurer une meilleure accessibilité, des performances optimisées et un bon référencement SEO.",
       "competences": [
-        "Mettre en œuvre des effets CSS graphiques avancés",
-        "Mettre en place une structure de navigation pour un site web",
-        "Assurer la cohérence graphique d'un site web",
-        "Utiliser un système de gestion de versions pour le suivi du projet et son hébergement",
-        "Mettre en place son environnement Front-End"
+        "Présentation des projets de photographie de Nina Carducci, avec des images de haute qualité et des descriptions détaillées.",
+        "Possibilité de naviguer à travers les différentes catégories de projets, comme les mariages, les portraits, les concerts, etc ...",
+        "Formulaire de contact permettant aux visiteurs de prendre contact avec Nina Carducci pour des demandes de projets ou de collaboration."
       ]
     }
   ]

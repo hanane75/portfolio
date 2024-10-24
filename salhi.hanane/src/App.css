@@ -810,6 +810,7 @@ font-weight: 600;
   text-decoration: none; /* Enlève le soulignement du lien */
   color: #007bff; /* Couleur du texte */
   margin-bottom: 20px; /* Espacement en bas */
+  padding-top: 50px;
 }
 
 .back-button:hover {

@@ -15,6 +15,11 @@ const ProjectDetails = () => {
 
   return (
     <section id="Home" className='container-fluid '>
+         <div className="logo">
+       <Link to="/">
+       <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" />
+       </Link>
+      </div>
        {/* Flèche de retour */}
        <Link to="/" className="back-button">
           <FaArrowLeft /> {/* Utilisation d'une icône de flèche */}
