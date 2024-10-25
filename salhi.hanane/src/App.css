@@ -212,7 +212,7 @@ section, .projects-section {
   position: absolute;
   top: 50%; /* Centrage vertical */
   left: 50%; /* Centrage horizontal */
-  width: 250px; /* Taille du chemin de rotation */
+  width: 200px; /* Taille du chemin de rotation */
   height: 250px;
   transform: translate(-50%, -50%);
   animation: rotate 10s linear infinite;
@@ -272,9 +272,12 @@ section, .projects-section {
     justify-content: space-between;
     text-align: left;
   }
+  .hero-image-container {
+    max-width: 300px;
+  }
 .rotate-container{
-  width: 350px;
-    height: 350px;
+  width: 300px;
+    height: 300px;
 }
   .hero-content {
     flex: 1;
@@ -288,10 +291,10 @@ section, .projects-section {
     top: -20%; /* Ajusté pour écrans plus grands */
   }
   .icon-react {
-    left: -15%; /* Déplacement plus marqué sur les écrans larges */
+    left: -10%; /* Déplacement plus marqué sur les écrans larges */
   }
   .icon-css {
-    right: -15%;
+    right: -10%;
   }
 }
 
