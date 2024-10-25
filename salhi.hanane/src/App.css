@@ -136,7 +136,7 @@ section, .projects-section {
     justify-content: center;
     flex-wrap: wrap;
     padding-left: 15px;
-    
+    padding-top: 20px;
   }
 
   .hamburger {
@@ -313,7 +313,7 @@ section, .projects-section {
   }
   .rotate-container{
     top: 50%;
-    left: 40%;
+    left: 50%;
     width: 270px;
     height: 270px;
   }
