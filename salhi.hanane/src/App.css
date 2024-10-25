@@ -197,7 +197,7 @@ section, .projects-section {
   .hero-image-container {
     position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 300px;
   }
 
 
@@ -212,7 +212,7 @@ section, .projects-section {
   position: absolute;
   top: 50%; /* Centrage vertical */
   left: 50%; /* Centrage horizontal */
-  width: 200px; /* Taille du chemin de rotation */
+  width: 250px; /* Taille du chemin de rotation */
   height: 250px;
   transform: translate(-50%, -50%);
   animation: rotate 10s linear infinite;
@@ -238,7 +238,7 @@ section, .projects-section {
 }
 
 .icon-js {
-  top: -15%; /* Ajusté pour que ça reste autour de l'image */
+  top: -30%; /* Ajusté pour que ça reste autour de l'image */
   left: 50%;
   transform: translateX(-50%);
 }
@@ -250,7 +250,7 @@ section, .projects-section {
 }
 
 .icon-css {
-  right: -10%; /* Réduit pour mobile et ajusté à droite */
+  right: -15%; /* Réduit pour mobile et ajusté à droite */
   top: 50%;
   transform: translateY(-50%);
 }
