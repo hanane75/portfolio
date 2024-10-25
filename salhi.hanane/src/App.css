@@ -298,6 +298,17 @@ section, .projects-section {
   }
 }
 
+@media (max-width: 320px) {
+  
+  .hero-image-container {
+    max-width: 200px;
+  }
+.rotate-container{
+  width: 200px;
+    height: 200px;
+}
+  
+}
 /* Media query pour les grands écrans */
 @media (min-width: 1024px) {
   .hero-container {
@@ -451,6 +462,31 @@ section, .projects-section {
   }
   .contact-section h2{
     font-size: 1rem;
+  }
+  .project-card h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+    
+  }
+  
+  .project-card p {
+    font-size: 1rem;
+    text-align: center;
+    color:#410578;
+   
+  }
+  .project-card{
+    justify-content: flex-start;
+    
+  }
+  .skills-title{
+    font-size: 1rem;
+  }
+  .service-item h3 {
+    font-size: 1rem;
+  }
+  .project-details-btn{
+    font-size: 12px;
   }
 }
 
