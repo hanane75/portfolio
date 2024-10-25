@@ -309,7 +309,7 @@ section, .projects-section {
     margin: 0 1.5rem;
   }
   .rotate-container{
-    top: 40%;
+    top: 50%;
     left: 40%;
     width: 270px;
     height: 270px;
@@ -320,7 +320,7 @@ section, .projects-section {
   }
 
   .icon-js {
-    top: -28%;
+    top: -29%;
   }
   .icon-react {
     left: -20%;
@@ -409,6 +409,7 @@ section, .projects-section {
 .project-card h3 {
   font-size: 1.5rem;
   margin: 10px 0;
+  font-weight: 600;
 }
 
 .project-card p {
