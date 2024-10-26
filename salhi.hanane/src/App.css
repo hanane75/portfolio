@@ -307,7 +307,15 @@ section, .projects-section {
   width: 200px;
     height: 200px;
 }
-  
+.service-item{
+  width: 200px !important;
+}
+.service-item h3{
+  font-size: 0.8rem !important;
+}
+.service-item p {
+  font-size: 0.6rem !important;
+}
 }
 /* Media query pour les grands écrans */
 @media (min-width: 1024px) {
@@ -476,7 +484,8 @@ section, .projects-section {
    
   }
   .project-card{
-    justify-content: flex-start;
+    justify-content: space-between;
+    height: auto;
     
   }
   .skills-title{

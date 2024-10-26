@@ -14,10 +14,8 @@ function HeroSection() {
         clearInterval(interval);
       }
     }, 50);
-
-    return () => clearInterval(interval); // Nettoie l'intervalle
+    return () => clearInterval(interval); 
   }, [fullText]);
-
   // Fonction pour gérer la redirection vers la section contact
   const handleScrollToContact = () => {
     const contactSection = document.getElementById('contact');
@@ -25,7 +23,6 @@ function HeroSection() {
       contactSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
-
   return (
     <section className="hero-container">
       <div className="hero-content">
@@ -36,29 +33,17 @@ function HeroSection() {
           Contactez-moi
         </button>
       </div>
-
       <div className="hero-image-container">
-        <img
-          src={`${process.env.PUBLIC_URL}/photoProfil.jpg`}
-          alt="SALHI Hanane"
-          className="profile-image"
-        />
+        <img src={`${process.env.PUBLIC_URL}/photoProfil.jpg`} alt="SALHI Hanane" className="profile-image" />
 
         {/* Icônes flottantes */}
         <div className="rotate-container">
-          <div className="icon icon-js">
-            <FaJsSquare size={40} />
-          </div>
-          <div className="icon icon-react">
-            <FaReact size={40} />
-          </div>
-          <div className="icon icon-css">
-            <FaCss3Alt size={40} />
-          </div>
+          <div className="icon icon-js"> <FaJsSquare size={40} /></div>
+          <div className="icon icon-react"><FaReact size={40} /></div>
+          <div className="icon icon-css"><FaCss3Alt size={40} /></div>
         </div>
       </div>
     </section>
   );
 }
-
 export default HeroSection;

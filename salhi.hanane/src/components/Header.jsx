@@ -24,51 +24,27 @@ const Header = () => {
       <nav className="nav">
         <ul className={isOpen ? 'active' : ''}>
           <li>
-            <Link
-              to="home"
-              smooth={true}
-              duration={500}
-              onClick={toggleMenu}
-            >
+            <Link to="home" smooth={true} duration={500}onClick={toggleMenu}> 
               Home
             </Link>
           </li>
           <li>
-            <Link
-              to="projects"
-              smooth={true}
-              duration={500}
-              onClick={toggleMenu}
-            >
+            <Link to="projects" smooth={true} duration={500} onClick={toggleMenu}>
               Projects
             </Link>
           </li>
           <li>
-            <Link
-              to="services"
-              smooth={true}
-              duration={500}
-              onClick={toggleMenu}
-            >
+            <Link to="services" smooth={true} duration={500} onClick={toggleMenu}>
               Services
             </Link>
           </li>
           <li>
-            <a
-              href={`${process.env.PUBLIC_URL}/cv-hanane.pdf`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href={`${process.env.PUBLIC_URL}/cv-hanane.pdf`} target="_blank" rel="noopener noreferrer">
               CV
             </a>
           </li>
           <li>
-            <Link
-              to="contact"
-              smooth={true}
-              duration={500}
-              onClick={toggleMenu}
-            >
+            <Link to="contact" smooth={true} duration={500} onClick={toggleMenu}>
               Contact
             </Link>
           </li>
