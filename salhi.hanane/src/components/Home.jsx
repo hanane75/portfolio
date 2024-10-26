@@ -31,7 +31,7 @@ const Home = () => {
           {JSON.stringify(schemaOrganization)}
         </script>
         <title>Portfolio SALHI Hanane </title>
-        <meta name="description" content="Découvrez le portfolio de Hanane SALHI, développeuse web passionnée, spécialisée dans la création d'applications web modernes et réactives. Explorez mes projets, compétences et réalisations dans le domaine du développement front-end." />
+        <meta name="description" content="Découvrez le portfolio de Hanane SALHI, développeuse web passionnée,basé a paris,  spécialisée dans la création d'applications web modernes et réactives. Explorez mes projets, compétences et réalisations dans le domaine du développement front-end." />
       </Helmet>
 
         <Header />
