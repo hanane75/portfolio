@@ -3,6 +3,7 @@ import React from 'react';
 import { useParams ,Link} from 'react-router-dom';
 import projectsData from '../Data/projectsData.json';
 import { FaArrowLeft } from 'react-icons/fa'; 
+import Footer from './Footer';
 
 
 const ProjectDetails = () => {
@@ -14,7 +15,7 @@ const ProjectDetails = () => {
   }
 
   return (
-    <section id="Home" className='container-fluid '>
+    <section  className='container-fluid '>
          <div  className='headerdetail'>
             <div className="logo">
             <Link to="/">
@@ -44,6 +45,7 @@ const ProjectDetails = () => {
         </ul>
       </div>
     </div>
+    <Footer/>
     </section>
   );
 };
