@@ -6,7 +6,7 @@
       "description": "Créer un prototype de site en intégrant la maquette conçue par le designer UI, en HTML et CSS. Le site doit être responsive.",
       "url": "https://github.com/hanane75/projet3-Booki",
       "technologies": ["HTML", "CSS"],
-      "image": "booki.png",
+      "image": "booki.webp",
       "details": "Pour ce projet, j’interviens comme développeur web au sein de la start-up Booki (agence de voyage) pour créer la page d’accueil de leur site.\nCe site internet doit permettre aux usagers de pouvoir trouver facilement des hébergements et des activités dans la ville de leur choix.\nIl faudra bien respecter l’architecture suivante :\n\n Un fichier “index.html” contenant une première base du code HTML que tu devras compléter.\nUn dossier “css” contenant un fichier “style.css” avec une première ébauche du code CSS que tu devras compléter également.\nUn dossier “images” contenant l’ensemble des images utilisées sur le site.",
       "competences": [
         "Maîtrise des Langages de Base",
@@ -25,7 +25,7 @@
       "description": "Développement en mobile first répertoriant les menus de restaurants gastronomiques.",
       "url": "https://github.com/hanane75/projet4-Ohmyfood",
       "technologies": ["HTML", "CSS (SASS)", "Responsive Design"],
-      "image": "ohmyfood.png",
+      "image": "ohmyfood.webp",
       "details": "Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et de réduire leur temps d'attente dans les restaurants car leur menu est préparé à l'avance. Plus de perte de temps à consulter la carte !",
       "competences": [
         "Mettre en œuvre des effets CSS graphiques avancés",
@@ -41,7 +41,7 @@
       "description": " Créez une application web de location immobilière avec React",
       "url": "https://github.com/hanane75/projet7-kasa",
       "technologies": ["React","Node.js"],
-      "image": "kasa.png",
+      "image": "kasa.webp",
       "details": "Pour ce projet, L'objectif est de développer le front-end d'une application de location de logements en utilisant React et React Router, en suivant les maquettes fournies et en utilisant des données simulées extraites d'un fichier JSON.",
       "competences": [
         "Développer une interface web avec Sass.",
@@ -57,7 +57,7 @@
       "description": "Optimisez le référencement d'un site de photographe",
       "url": "https://github.com/hanane75/ninacarducci",
       "technologies": ["lighthouse", "Wave"],
-      "image": "nina.png",
+      "image": "nina.webp",
       "details": "Ce projet est le portfolio en ligne de Nina Carducci, une photographe basée à Bordeaux. Il a été amélioré pour assurer une meilleure accessibilité, des performances optimisées et un bon référencement SEO.",
       "competences": [
         "Présentation des projets de photographie de Nina Carducci, avec des images de haute qualité et des descriptions détaillées.",
@@ -72,7 +72,7 @@
       "description": "Implémentez le front-end d'une application bancaire avec React ,et Implémenter la gestion des données avec Redux",
       "url": "https://github.com/hanane75/ArgentBank-website",
       "technologies": ["React", "Redux","Swagger","Node.js"],
-      "image": "argentbank.png",
+      "image": "argentbank.webp",
       "details": "Dans ce projet, j'ai travaillée sur le développement front-end d’une application bancaire en utilisant React et Redux pour créer une expérience utilisateur dynamique et réactive. ma mission principale etait d'intégrer le front-end avec le back-end via des appels API.j'ai utilisée  React pour développer l'interface utilisateur de l'application bancaire, en me concentrant sur la création d'un tableau de bord complet et responsive pour les utilisateurs. Redux etait utilisé pour gérer les données de l'application. Cela ma permet de maintenir un état global cohérent à travers l'application.Pour définir les points d'accès de l'API et modéliser les interactions avec les données des transactions, j'ai utilisée Swagger. Cet outil ma aidera à décrire les différentes routes et actions nécessaires pour l'API.ainsi que Node.js pour exécuter le code JavaScript côté serveur. Cela ma donner une expérience pratique de la gestion d'une application full-stack.",
       "competences": [
         "La maîtrise de React et Redux est cruciale pour tout développeur front-end moderne",

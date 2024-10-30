@@ -19,7 +19,7 @@ const ProjectDetails = () => {
          <div  className='headerdetail'>
             <div className="logo">
             <Link to="/">
-       <img   src={`${process.env.PUBLIC_URL}/logo.png`} alt="Logo" />
+       <img   src={`${process.env.PUBLIC_URL}/logo.webp`} alt="Logo" />
        </Link>
             </div>
        
