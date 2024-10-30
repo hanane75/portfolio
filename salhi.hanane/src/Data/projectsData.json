@@ -64,6 +64,21 @@
         "Possibilité de naviguer à travers les différentes catégories de projets, comme les mariages, les portraits, les concerts, etc ...",
         "Formulaire de contact permettant aux visiteurs de prendre contact avec Nina Carducci pour des demandes de projets ou de collaboration."
       ]
+    },
+
+    {
+      "id": 5,
+      "title": "ArgentBank",
+      "description": "Implémentez le front-end d'une application bancaire avec React ,et Implémenter la gestion des données avec Redux",
+      "url": "https://github.com/hanane75/ArgentBank-website",
+      "technologies": ["React", "Redux","Swagger","Node.js"],
+      "image": "argentbank.png",
+      "details": "Dans ce projet, j'ai travaillée sur le développement front-end d’une application bancaire en utilisant React et Redux pour créer une expérience utilisateur dynamique et réactive. ma mission principale etait d'intégrer le front-end avec le back-end via des appels API.j'ai utilisée  React pour développer l'interface utilisateur de l'application bancaire, en me concentrant sur la création d'un tableau de bord complet et responsive pour les utilisateurs. Redux etait utilisé pour gérer les données de l'application. Cela ma permet de maintenir un état global cohérent à travers l'application.Pour définir les points d'accès de l'API et modéliser les interactions avec les données des transactions, j'ai utilisée Swagger. Cet outil ma aidera à décrire les différentes routes et actions nécessaires pour l'API.ainsi que Node.js pour exécuter le code JavaScript côté serveur. Cela ma donner une expérience pratique de la gestion d'une application full-stack.",
+      "competences": [
+        "La maîtrise de React et Redux est cruciale pour tout développeur front-end moderne",
+        "L'utilisation de Swagger pour documenter les API",
+        "l'utilisation de node.js pour exécuter le code JavaScript côté serveur. Cela ma nner une expérience pratique de la gestion d'une application full-stack."
+      ]
     }
   ]
   
