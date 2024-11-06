@@ -24,7 +24,7 @@ const Header = () => {
       <nav className="nav">
         <ul className={isOpen ? 'active' : ''}>
           <li>
-            <Link to="home" smooth={true} duration={500}onClick={toggleMenu}> 
+            <Link to="home" smooth={true} duration={500} onClick={toggleMenu}> 
               Home
             </Link>
           </li>
@@ -39,7 +39,7 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <a href={`${process.env.PUBLIC_URL}/cv-hanane.pdf`} target="_blank" rel="noopener noreferrer">
+            <a href={`${process.env.PUBLIC_URL}/cv-salhi-hanane.pdf`} target="_blank" rel="noopener noreferrer">
               CV
             </a>
           </li>
