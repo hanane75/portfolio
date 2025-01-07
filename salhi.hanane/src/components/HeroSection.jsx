@@ -34,7 +34,7 @@ function HeroSection() {
         </button>
       </div>
       <div className="hero-image-container">
-        <img src={`${process.env.PUBLIC_URL}/photoProfil.webp`} alt="SALHI Hanane" className="profile-image" />
+        <img src={`${process.env.PUBLIC_URL}/developpeuse.webp`} alt="SALHI Hanane" className="profile-image" />
 
         {/* Icônes flottantes */}
         <div className="rotate-container">
